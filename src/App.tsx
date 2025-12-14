@@ -1,8 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
-import Contact from './components/Contact';
+import HomeConsumption from './components/HomeConsumption';
+import Transfer from './components/Transfer';
+import Loan from './components/Loan';
+import Credit from './components/Credit';
+import Investment from './components/Investment';
+import DailyFinance from './components/DailyFinance';
+import Business from './components/Business';
 import Footer from './components/Footer';
 
 function App() {
@@ -11,8 +16,13 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
-        <Contact />
+        <HomeConsumption />
+        <Transfer />
+        <Loan />
+        <Credit />
+        <Investment />
+        <DailyFinance />
+        <Business />
       </main>
       <Footer />
     </div>

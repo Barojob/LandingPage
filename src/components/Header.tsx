@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <nav className="max-w-[1100px] mx-auto px-6 sm:px-10">
         <div className="flex justify-between items-center h-[70px]">
           {/* 회사 로고/이름 */}
-          <div className="flex-shrink-0 cursor-pointer">
+          <div className="flex-shrink-0 cursor-pointer mr-8">
             <h1 className="text-[20px] font-bold text-[#333d4b] tracking-tight">
               인력특공대
             </h1>

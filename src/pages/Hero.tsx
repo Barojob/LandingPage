@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section className="min-h-screen flex items-center justify-center bg-transparent">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* 메인 타이틀 */}
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">

@@ -31,8 +31,8 @@ const MatchingBenefit: React.FC = () => {
   }, []);
   return (
     // 배경색을 연회색(#f9fafb)으로 설정하여 이전 섹션과 대비를 줍니다.
-    <section ref={sectionRef} className="py-24 bg-white">
-      <div className="max-w-[1100px] mx-auto px-6">
+    <section ref={sectionRef} className="py-12 sm:py-16 lg:py-24 bg-white">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 메인 콘텐츠 영역 (PC에서는 텍스트 왼쪽, 이미지 오른쪽) */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
           {/* [좌측] 텍스트 영역 */}
@@ -43,10 +43,10 @@ const MatchingBenefit: React.FC = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-tight mb-2 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-tight mb-2 tracking-tight">
               장비·경력 등록으로
             </h2>
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-tight mb-8 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-tight mb-6 sm:mb-8 tracking-tight">
               더 잘 맞는 매칭
             </h2>
             <div className="space-y-6">

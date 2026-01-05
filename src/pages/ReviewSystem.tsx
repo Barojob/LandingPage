@@ -30,8 +30,8 @@ const ReviewSystem: React.FC = () => {
     };
   }, []);
   return (
-    <section ref={sectionRef} className="py-24 bg-white">
-      <div className="max-w-[1100px] mx-auto px-6">
+    <section ref={sectionRef} className="py-12 sm:py-16 lg:py-24 bg-white">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 메인 콘텐츠 영역 (PC에서는 이미지 왼쪽, 텍스트 오른쪽) */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
           {/* [좌측] 이미지 영역 (앱 모컵) */}
@@ -55,10 +55,10 @@ const ReviewSystem: React.FC = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-2 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-2 tracking-tight">
               신뢰를 만드는 리뷰 시스템
             </h2>
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-8 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-6 sm:mb-8 tracking-tight">
               일할수록 빨라지는 매칭
             </h2>
             <div className="space-y-6">

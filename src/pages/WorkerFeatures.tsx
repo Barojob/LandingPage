@@ -29,11 +29,11 @@ const WorkerFeatures: React.FC = () => {
   }, []);
   return (
     // 이전 섹션과 배경색을 다르게(예: 흰색 <-> 연회색) 배치하면 더 좋습니다.
-    <section ref={sectionRef} className="py-24 bg-white">
-      <div className="max-w-[1100px] mx-auto px-6">
+    <section ref={sectionRef} className="py-12 sm:py-16 lg:py-24 bg-white">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 1. 섹션 전체 제목 */}
         <h2
-          className={`text-[32px] md:text-[40px] font-bold text-[#333d4b] leading-tight mb-20 tracking-tight text-center md:text-left transition-all duration-1000 ${
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-8 sm:mb-12 lg:mb-20 tracking-tight text-center md:text-left transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -63,10 +63,10 @@ const WorkerFeatures: React.FC = () => {
 
           {/* [우측] 텍스트 영역 */}
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-tight mb-2 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-tight mb-2 tracking-tight">
               앱 켜면 일이 뜬다.
             </h2>
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-tight mb-8 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-tight mb-6 sm:mb-8 tracking-tight">
               일 시작하는데 1분!
             </h2>
             <p className="text-[#4e5968] text-lg md:text-xl font-medium leading-relaxed">

@@ -3,8 +3,8 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     // [수정] 배경색을 #f9fafb 보다 한 단계 진한 #f2f4f6로 변경했습니다.
-    <footer className="bg-[#f2f4f6] py-16">
-      <div className="max-w-[1100px] mx-auto px-6">
+    <footer className="bg-[#f2f4f6] py-8 sm:py-12 lg:py-16">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 상단 정보 영역 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* 회사 정보 */}
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4 text-[#333d4b]">
               인력특공대
             </h3>
-            <p className="text-[#4e5968] text-sm leading-relaxed whitespace-nowrap">
+            <p className="text-[#4e5968] text-sm leading-relaxed">
               현장 일자리 매칭의 새로운 기준을 제시합니다.
               <br />
               일하는 사람들과 현장을 연결하는 스마트 솔루션입니다.

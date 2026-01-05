@@ -4,8 +4,8 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-transparent backdrop-blur-sm">
       {/* 1. 컨테이너 폭을 max-w-[1100px]로 제한하여 너무 양끝으로 벌어지지 않게 조절 */}
-      <nav className="max-w-[1100px] mx-auto px-6 sm:px-10">
-        <div className="flex justify-between items-center h-[70px]">
+      <nav className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex justify-between items-center h-[60px] sm:h-[70px]">
           {/* 회사 로고/이름 */}
           <div
             className="flex-shrink-0 cursor-pointer"
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
               viewBox="0 0 106 21"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-auto"
+              className="h-6 sm:h-7 lg:h-8 w-auto"
             >
               <g clip-path="url(#clip0_2658_2969)">
                 <path

@@ -3,19 +3,19 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-transparent">
-      <div className="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* 메인 타이틀 */}
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-10">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 sm:mb-10 leading-tight px-2">
           찾는 데 힘쓰면 언제 일하나
         </h1>
 
         {/* 서브 타이틀 */}
-        <p className="text-2xl md:text-3xl text-gray-700 mb-8">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 mb-6 sm:mb-8 leading-relaxed px-2">
           전국 어디서든 인력 매칭이 가능한 인력특공대
         </p>
 
         {/* 설명 문구 */}
-        <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-2">
           지금 바로 카카오톡으로 인력/일자리를 요청해보세요
         </p>
 
@@ -39,17 +39,21 @@ const Hero: React.FC = () => {
         </div> */}
 
         {/* 카카오톡 채널 추가 */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center px-4">
           <a
             href="http://pf.kakao.com/_Mxoxbxkn/chat"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black text-white px-8 py-4 text-lg font-semibold rounded-xl hover:bg-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-3"
+            className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl hover:bg-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3 w-auto max-w-xs"
           >
-            <svg className="w-6 h-6" fill="#FFEB00" viewBox="0 0 24 24">
+            <svg
+              className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
+              fill="#FFEB00"
+              viewBox="0 0 24 24"
+            >
               <path d="M12 2C6.48 2 2 5.74 2 10.2c0 3.35 2.18 6.31 5.42 7.89L7.5 21l4.38-2.88c.38.11.77.17 1.12.17 5.52 0 10-3.74 10-8.2S17.52 2 12 2z" />
             </svg>
-            카카오톡 요청
+            <span className="whitespace-nowrap">카카오톡 요청</span>
           </a>
         </div>
       </div>

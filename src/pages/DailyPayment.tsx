@@ -32,7 +32,7 @@ const DailyPayment: React.FC = () => {
 
   return (
     <section ref={sectionRef} className="py-24 bg-white">
-      <div className="max-w-[1100px] mx-auto px-6">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 메인 콘텐츠 영역 (PC에서는 텍스트 왼쪽, 이미지 오른쪽) */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
           {/* [좌측] 텍스트 영역 */}
@@ -43,7 +43,7 @@ const DailyPayment: React.FC = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-[32px] md:text-[44px] font-bold text-[#333d4b] leading-tight mb-8 tracking-tight whitespace-nowrap">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-tight mb-6 sm:mb-8 tracking-tight">
               일당 당일 입금 보장
             </h2>
             <p className="text-[#4e5968] text-lg md:text-[22px] font-medium leading-relaxed">

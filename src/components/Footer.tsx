@@ -43,7 +43,24 @@ const Footer: React.FC = () => {
             </h4>
             <div className="space-y-2 text-sm text-[#4e5968]">
               <p>
+                <span className="text-[#8b95a1] mr-1">상호명:</span> 인력특공대
+              </p>
+              <p>
                 <span className="text-[#8b95a1] mr-1">대표:</span> 김정우
+              </p>
+              <p>
+                <span className="text-[#8b95a1] mr-1">사업자등록번호:</span>{" "}
+                240-93-02404
+              </p>
+              <p>
+                <span className="text-[#8b95a1] mr-1">
+                  직업소개사업신고번호:
+                </span>{" "}
+                2025-5610018-14-5-00010
+              </p>
+              <p>
+                <span className="text-[#8b95a1] mr-1">개인정보관리책임자:</span>{" "}
+                김정우
               </p>
               <p>
                 <span className="text-[#8b95a1] mr-1">주소:</span> 경기 용인시

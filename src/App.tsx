@@ -1,19 +1,18 @@
-import React from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./pages/Hero";
 import About from "./pages/About";
 import AppPreview from "./pages/AppPreview";
-import TargetAudience from "./pages/TargetAudience";
-import WorkerFeatures from "./pages/WorkerFeatures";
-import MatchingBenefit from "./pages/MatchingBenefit";
-import ReviewSystem from "./pages/ReviewSystem";
 import DailyPayment from "./pages/DailyPayment";
 import DownloadCTA from "./pages/DownloadCTA";
-import Footer from "./components/Footer";
+import Hero from "./pages/Hero";
+import MatchingBenefit from "./pages/MatchingBenefit";
+import ReviewSystem from "./pages/ReviewSystem";
+import TargetAudience from "./pages/TargetAudience";
+import WorkerFeatures from "./pages/WorkerFeatures";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-blue-400 to-blue-800">
+    <div className="min-h-screen bg-gradient-to-b from-white via-blue-600 to-blue-1000">
       <Header />
       <Hero />
       <About />

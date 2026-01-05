@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-sm text-[#4e5968]">
               <p className="flex items-center">
                 <span className="mr-2 opacity-70">📧</span>
-                <span>contact@inforce.kr</span>
+                <span>barojob0.naver.com</span>
               </p>
               <p className="flex items-center">
                 <span className="mr-2 opacity-70">📞</span>

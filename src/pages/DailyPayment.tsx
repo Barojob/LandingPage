@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PhoneMockup from "../components/PhoneMockup";
 // 임금 보장 관련 아이콘 이미지를 import 하세요.
 import payment from "../Feature/payment.png";
@@ -31,7 +31,6 @@ const DailyPayment: React.FC = () => {
   }, []);
 
   return (
-    // 배경을 연회색(#f9fafb)으로 설정하여 이전 섹션과 리듬감을 맞춥니다.
     <section ref={sectionRef} className="py-24 bg-white">
       <div className="max-w-[1100px] mx-auto px-6">
         {/* 메인 콘텐츠 영역 (PC에서는 텍스트 왼쪽, 이미지 오른쪽) */}

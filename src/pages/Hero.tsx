@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* 메인 타이틀 */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 sm:mb-10 leading-tight px-2">
-          찾는 데 힘쓰면 언제 일하나
+          건설 인력, 찾는 데 힘쓰면 언제 일하나
         </h1>
 
         {/* 서브 타이틀 */}

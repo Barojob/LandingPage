@@ -1,6 +1,28 @@
 import React from "react";
 
+// 1. TypeScript 환경에서 window 객체 내 gtag 함수를 인식하도록 선언합니다.
+declare global {
+  interface Window {
+    gtag: (type: string, action: string, params?: object) => void;
+  }
+}
+
 const Hero: React.FC = () => {
+  // 2. 카카오톡 클릭 시 실행될 핸들러 함수입니다.
+  const handleKakaoClick = () => {
+    // GA4 이벤트 전송: 'click_kakaotalk_request'라는 이름으로 이벤트를 기록합니다.
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "click_kakaotalk_request", {
+        event_category: "contact",
+        event_label: "hero_banner",
+        value: 1,
+      });
+    }
+
+    // 실제 카카오톡 채널 채팅방으로 이동합니다.
+    window.open("http://pf.kakao.com/_Mxoxbxkn/chat", "_blank");
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-transparent">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -40,12 +62,10 @@ const Hero: React.FC = () => {
           </button>
         </div> */}
 
-        {/* 카카오톡 채널 추가 */}
+        {/* 카카오톡 채널 추가 버튼 */}
         <div className="flex justify-center items-center px-4">
-          <a
-            href="http://pf.kakao.com/_Mxoxbxkn/chat"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleKakaoClick} // 3. 클릭 시 핸들러 함수 실행
             className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl hover:bg-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center sm:justify-start gap-2 sm:gap-3 w-auto max-w-xs"
           >
             <svg
@@ -56,7 +76,7 @@ const Hero: React.FC = () => {
               <path d="M12 2C6.48 2 2 5.74 2 10.2c0 3.35 2.18 6.31 5.42 7.89L7.5 21l4.38-2.88c.38.11.77.17 1.12.17 5.52 0 10-3.74 10-8.2S17.52 2 12 2z" />
             </svg>
             <span className="whitespace-nowrap">카카오톡 요청</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>

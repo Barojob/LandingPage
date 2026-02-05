@@ -55,7 +55,7 @@ const ReviewSystem: React.FC = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-2 tracking-tight">
+            <h2 className="whitespace-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b]  leading-[1.3] mb-2 tracking-tight">
               신뢰를 만드는 리뷰 시스템
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#333d4b] leading-[1.3] mb-6 sm:mb-8 tracking-tight">

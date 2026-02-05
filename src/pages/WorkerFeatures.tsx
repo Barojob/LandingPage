@@ -33,14 +33,17 @@ const WorkerFeatures: React.FC = () => {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* 1. 섹션 전체 제목 */}
         <h2
-          className={`text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-8 sm:mb-12 lg:mb-20 tracking-tight text-center md:text-left transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          근로자분들을 위한
-          <br />
-          인력특공대 기능
-        </h2>
+  // flex flex-col 사용, gap-2로 줄 간격 조절
+  // items-center(중앙정렬) -> md:items-start(왼쪽정렬)로 반응형 정렬 처리
+  className={`flex flex-col gap-2 sm:gap-4 items-center md:items-start
+    text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-8 sm:mb-12 lg:mb-20 tracking-tight transition-all duration-1000 ${
+    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+  }`}
+>
+  {/* 이제 span에 block이나 mb를 줄 필요가 없습니다 */}
+  <span>근로자분들을 위한</span>
+  <span>인력특공대 기능</span>
+</h2>
 
         {/* 2. 메인 콘텐츠 영역 (좌우 배치) */}
         <div

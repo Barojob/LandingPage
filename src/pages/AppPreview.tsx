@@ -42,11 +42,11 @@ const AppPreview: React.FC = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-3 sm:mb-4 lg:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl whitespace-nowrap lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-3 sm:mb-4 lg:mb-6">
             구직활동? 간단하게!
           </h2>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-6">
-            4번 클릭만으로 구직 종료!
+          <h2 className=" whitespace-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-[#333d4b] leading-tight mb-6">
+            4번 클릭만으로  구직 종료!
           </h2>
         </div>
 

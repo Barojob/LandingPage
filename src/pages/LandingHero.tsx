@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import { Container } from "../components/Container";
 import { Eyebrow } from "../components/Eyebrow";
 import { StoreBadgeLinks } from "../components/StoreBadgeLinks";
 
+const HERO_ROTATE_MS = 3000;
+const HERO_ROTATING_WORDS = ["일이", "일자리가"] as const;
+
 export function LandingHero() {
+  const [spinCount, setSpinCount] = useState(0);
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setSpinCount((n) => n + 1);
+    }, HERO_ROTATE_MS);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const currentWord = HERO_ROTATING_WORDS[spinCount % 2];
   return (
     <section className="hero" id="top">
       <Container>
@@ -23,8 +37,28 @@ export function LandingHero() {
             앱 등록 1분 · 매칭 자동
           </Eyebrow>
           <h1 className="hero__title fade-up fade-up--d1">
-            등록만 해두면
-            <br />
+            <span className="hero__title-line">
+              등록만 해두면{" "}
+              <span className="hero__word-flip" aria-hidden="true">
+                <span
+                  className="hero__word-flip-inner"
+                  style={{ transform: `rotateX(${-spinCount * 180}deg)` }}
+                >
+                  <span className="hero__word-flip-face hero__word-flip-face--front">
+                    <span className="hero__word-flip-text">
+                      {HERO_ROTATING_WORDS[0]}
+                    </span>
+                  </span>
+                  <span className="hero__word-flip-face hero__word-flip-face--back">
+                    <span className="hero__word-flip-text">
+                      {HERO_ROTATING_WORDS[1]}
+                    </span>
+                  </span>                </span>
+              </span>
+              <span className="hero__sr-only" aria-live="polite">
+                {currentWord}
+              </span>
+            </span>
             <em>알아서 찾아옵니다</em>
           </h1>
           <p className="hero__lede fade-up fade-up--d2">
@@ -39,7 +73,7 @@ export function LandingHero() {
             playHref="#cta"
           />
           <div className="hero__meta fade-up fade-up--d3">
-            <span className="hero__meta-item">현장 인터뷰 60+</span>
+            <span className="hero__meta-item">평점 시스템</span>
             <span className="hero__meta-item">알고리즘 매칭</span>
             <span className="hero__meta-item">검증된 인력 풀</span>
           </div>

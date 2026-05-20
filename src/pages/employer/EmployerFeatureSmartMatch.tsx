@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
 import { ShieldWithCheckSvg } from "../../components/icons/ShieldIcons";
 
+const NODE_FOCUS_MS = 2500;
+
 export function EmployerFeatureSmartMatch() {
+  const [activeStep, setActiveStep] = useState(-1);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    setActiveStep(0);
+    const id = window.setInterval(() => {
+      setActiveStep((s) => (s + 1) % 4);
+    }, NODE_FOCUS_MS);
+    return () => window.clearInterval(id);
+  }, []);
+
   return (
     <div className="feature-block fade-up">
       <div className="feature-block__copy">
@@ -24,18 +40,26 @@ export function EmployerFeatureSmartMatch() {
       </div>
       <div className="feature-block__media">
         <div className="smart-diamond">
-          <div className="smart-diamond__node smart-diamond__node--top">
+          <div
+            className={`smart-diamond__node smart-diamond__node--top${activeStep === 0 ? " smart-diamond__node--active" : ""}`}
+          >
             현장
             <br />
             위치
           </div>
-          <div className="smart-diamond__node smart-diamond__node--right">
+          <div
+            className={`smart-diamond__node smart-diamond__node--right${activeStep === 1 ? " smart-diamond__node--active" : ""}`}
+          >
             평점
           </div>
-          <div className="smart-diamond__node smart-diamond__node--bottom">
+          <div
+            className={`smart-diamond__node smart-diamond__node--bottom${activeStep === 2 ? " smart-diamond__node--active" : ""}`}
+          >
             근태
           </div>
-          <div className="smart-diamond__node smart-diamond__node--left">
+          <div
+            className={`smart-diamond__node smart-diamond__node--left${activeStep === 3 ? " smart-diamond__node--active" : ""}`}
+          >
             출근
             <br />
             횟수

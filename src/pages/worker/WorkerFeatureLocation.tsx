@@ -11,8 +11,8 @@ export function WorkerFeatureLocation() {
           <em>딱!</em> 골라드려요
         </h3>
         <p className="feature-block__desc">
-          출퇴근 가능한 범위를 직접 설정할 수 있어요. 너무 먼 현장이나 가기
-          힘든 곳이 아니라, <strong>우리 동네 일자리</strong>로 알림을 받을 수
+          출퇴근 가능한 범위를 직접 설정할 수 있어요. 너무 먼 현장이나 가기 힘든
+          곳이 아니라, <strong>우리 동네 일자리</strong>로 알림을 받을 수
           있습니다.
         </p>
         <ul className="feature-block__bullets">
@@ -23,10 +23,12 @@ export function WorkerFeatureLocation() {
         </ul>
       </div>
       <div className="feature-block__media">
-        <PhoneMockup
-          src="/images/03-worker-location.png"
-          alt="출근 가능 범위 설정 화면"
-        />
+        <div className="worker-feature-location__media">
+          <PhoneMockup
+            src="/images/03-worker-location.png"
+            alt="출근 가능 범위 설정 화면"
+          />
+        </div>
       </div>
     </div>
   );

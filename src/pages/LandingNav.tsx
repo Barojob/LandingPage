@@ -7,8 +7,8 @@ export function LandingNav() {
             src="/images/Logo.png"
             alt=""
             className="brand__logo"
-            width={32}
-            height={32}
+            width={42}
+            height={42}
             draggable={false}
           />
           <span>인력특공대</span>

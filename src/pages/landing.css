@@ -159,8 +159,8 @@ h3 {
   letter-spacing: -0.02em;
 }
 .brand__logo {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
   display: block;
   object-fit: contain;
@@ -1368,8 +1368,8 @@ h3 {
   gap: 10px;
 }
 .footer__brand .brand__logo {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
 }
 .footer__about {
   margin-top: 16px;

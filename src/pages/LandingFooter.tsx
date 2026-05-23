@@ -33,8 +33,8 @@ export function LandingFooter() {
                 src="/images/Logo.png"
                 alt=""
                 className="brand__logo"
-                width={36}
-                height={36}
+                width={48}
+                height={48}
                 draggable={false}
               />
               인력특공대

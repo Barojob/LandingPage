@@ -2,12 +2,12 @@ export function EmployerAudienceHero() {
   return (
     <div className="audience-hero fade-up">
       <img
-        src="/images/bear-employer-only.png"
+        src="/images/ForEmployer.png"
         alt="구인자 마스코트"
         className="audience-hero__bear"
       />
       <div className="audience-hero__copy">
-        <span className="audience-hero__badge">FOR COMPANIES</span>
+        <span className="audience-hero__badge">FOR EMPLOYER</span>
         <h2 className="audience-hero__title">
           필요한 인력
           <br />

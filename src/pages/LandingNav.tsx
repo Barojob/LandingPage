@@ -1,11 +1,16 @@
-import { BrandLogoGlyph } from "../components/icons/ShieldIcons";
-
 export function LandingNav() {
   return (
     <nav className="nav" id="nav">
       <div className="nav__inner">
         <a href="#top" className="brand">
-          <BrandLogoGlyph />
+          <img
+            src="/images/Logo.png"
+            alt=""
+            className="brand__logo"
+            width={32}
+            height={32}
+            draggable={false}
+          />
           <span>인력특공대</span>
         </a>
         <div className="nav__links">

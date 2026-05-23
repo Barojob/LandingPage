@@ -2,12 +2,12 @@ export function WorkerAudienceHero() {
   return (
     <div className="audience-hero fade-up">
       <img
-        src="/images/bear-worker-only.png"
+        src="/images/ForWorker.png"
         alt="근로자 마스코트"
         className="audience-hero__bear"
       />
       <div className="audience-hero__copy">
-        <span className="audience-hero__badge">FOR WORKERS</span>
+        <span className="audience-hero__badge">FOR WORKER</span>
         <h2 className="audience-hero__title">
           이젠 찾지 말고
           <br />

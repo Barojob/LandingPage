@@ -161,15 +161,9 @@ h3 {
 .brand__logo {
   width: 32px;
   height: 32px;
-  background: var(--blue-600);
-  border-radius: 9px;
-  display: grid;
-  place-items: center;
-}
-.brand__logo svg {
-  width: 18px;
-  height: 18px;
-  color: #fff;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
 }
 .nav__links {
   display: flex;
@@ -1376,10 +1370,6 @@ h3 {
 .footer__brand .brand__logo {
   width: 36px;
   height: 36px;
-}
-.footer__brand .brand__logo svg {
-  width: 20px;
-  height: 20px;
 }
 .footer__about {
   margin-top: 16px;

@@ -23,15 +23,6 @@ export function ShieldOutlineSvg({
   );
 }
 
-/** 네비·푸터 브랜드 마크 */
-export function BrandLogoGlyph() {
-  return (
-    <span className="brand__logo">
-      <ShieldOutlineSvg strokeWidth={2.4} />
-    </span>
-  );
-}
-
 /** 방패 + 체크 (CTA 카드, 스마트 다이아몬드 등) */
 export function ShieldWithCheckSvg({
   className,

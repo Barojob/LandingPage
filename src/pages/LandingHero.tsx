@@ -23,12 +23,12 @@ export function LandingHero() {
         <div className="hero__inner">
           <div className="hero__bears fade-up">
             <img
-              src="/images/bear-worker-only.png"
+              src="/images/leftBear.png"
               alt="근로자 마스코트"
               className="hero__bear hero__bear--worker"
             />
             <img
-              src="/images/bear-employer-only.png"
+              src="/images/rightBear.png"
               alt="구인자 마스코트"
               className="hero__bear hero__bear--employer"
             />

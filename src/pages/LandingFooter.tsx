@@ -1,4 +1,3 @@
-import { BrandLogoGlyph } from "../components/icons/ShieldIcons";
 import { Container } from "../components/Container";
 import { FooterLinkColumn } from "../components/FooterLinkColumn";
 
@@ -30,7 +29,14 @@ export function LandingFooter() {
         <div className="footer__inner">
           <div>
             <div className="footer__brand">
-              <BrandLogoGlyph />
+              <img
+                src="/images/Logo.png"
+                alt=""
+                className="brand__logo"
+                width={36}
+                height={36}
+                draggable={false}
+              />
               인력특공대
             </div>
             <p className="footer__about">

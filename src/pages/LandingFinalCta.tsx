@@ -20,11 +20,7 @@ export function LandingFinalCta() {
               <br />
               앱 등록은 1분, 그 뒤로는 알아서 매칭이 옵니다.
             </p>
-            <StoreBadgeLinks
-              className="final-cta__store"
-              appHref="#"
-              playHref="#"
-            />
+            <StoreBadgeLinks className="final-cta__store" />
           </div>
         </div>
       </Container>

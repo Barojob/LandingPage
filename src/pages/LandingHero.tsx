@@ -36,7 +36,10 @@ export function LandingHero() {
             <br />
             알고리즘이 위치·경력·평점을 분석해서 알아서 매칭해드려요.
           </p>
-          <StoreBadgeLinks className="store-badges fade-up fade-up--d3" />
+          <StoreBadgeLinks
+            className="store-badges fade-up fade-up--d3"
+            placement="hero"
+          />
           <div className="hero__meta fade-up fade-up--d3">
             <span className="hero__meta-item">평점 시스템</span>
             <span className="hero__meta-item">알고리즘 매칭</span>

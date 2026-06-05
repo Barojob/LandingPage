@@ -1,4 +1,9 @@
+import { Link } from "react-router-dom";
+import { getAppDownloadNavHref } from "../utils/device";
+
 export function LandingNav() {
+  const downloadHref = getAppDownloadNavHref();
+
   return (
     <nav className="nav" id="nav">
       <div className="nav__inner">
@@ -18,9 +23,15 @@ export function LandingNav() {
           <a href="#employer">구인자</a>
           <a href="#faq">자주 묻는 질문</a>
         </div>
-        <a href="#cta" className="nav__cta">
-          앱 다운로드 →
-        </a>
+        {downloadHref === "/download" ? (
+          <Link to="/download" className="nav__cta">
+            앱 다운로드 →
+          </Link>
+        ) : (
+          <a href="#cta" className="nav__cta">
+            앱 다운로드 →
+          </a>
+        )}
       </div>
     </nav>
   );

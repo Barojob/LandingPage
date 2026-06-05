@@ -1,20 +1,20 @@
 import { useEffect } from "react";
 import { APP_STORE_URL, PLAY_STORE_URL } from "../utils/constants";
+import { getStoreRedirectUrl } from "../utils/device";
 import "../pages/landing.css";
 
 const Download = () => {
   useEffect(() => {
-    const userAgent = navigator.userAgent.toLowerCase();
+    const target = getStoreRedirectUrl();
 
-    if (/android/.test(userAgent)) {
+    if (target === "play") {
       window.location.href = PLAY_STORE_URL;
-    } else if (/iphone|ipad|ipod/.test(userAgent)) {
+    } else if (target === "app") {
       window.location.href = APP_STORE_URL;
     } else {
       window.location.href = "/";
     }
   }, []);
-
   return (
     <div className="download-page">
       <div className="download-page__card">

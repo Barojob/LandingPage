@@ -4,7 +4,7 @@ import { FooterLinkColumn } from "../components/FooterLinkColumn";
 const SERVICE_LINKS = [
   { href: "#worker", label: "근로자" },
   { href: "#employer", label: "구인자" },
-  { href: "#cta", label: "앱 다운로드" },
+  { href: "/download", label: "앱 다운로드" },
 ];
 
 const COMPANY_LINKS = [

@@ -33,6 +33,17 @@ export function useLandingPageEffects() {
   }, []);
 
   useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash || hash.length <= 1) return;
+    const target = document.querySelector(hash);
+    if (!target) return;
+    requestAnimationFrame(() => {
+      const top = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+  }, []);
+
+  useEffect(() => {
     const handler = (e: MouseEvent) => {
       const a = (e.target as HTMLElement).closest("a[href^='#']");
       if (!a) return;

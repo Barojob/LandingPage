@@ -8,18 +8,6 @@ export function LandingHero() {
     <section className="hero" id="top">
       <Container>
         <div className="hero__inner">
-          <div className="hero__bears fade-up">
-            <img
-              src="/images/leftBear.png"
-              alt="근로자 마스코트"
-              className="hero__bear hero__bear--worker"
-            />
-            <img
-              src="/images/rightBear.png"
-              alt="구인자 마스코트"
-              className="hero__bear hero__bear--employer"
-            />
-          </div>
           <Eyebrow variant="badge" className="fade-up fade-up--d1">
             앱 등록 1분 · 매칭 자동
           </Eyebrow>

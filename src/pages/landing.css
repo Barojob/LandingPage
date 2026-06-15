@@ -460,7 +460,8 @@ h3 {
 .promise__head p {
   margin-top: 16px;
   color: var(--ink-500);
-  font-size: 17px;
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.7;
 }
 .promise__grid {
   display: grid;
@@ -510,7 +511,7 @@ h3 {
 .promise__card p {
   margin-top: 10px;
   color: var(--ink-500);
-  font-size: 15px;
+  font-size: clamp(16px, 1.3vw, 18px);
   line-height: 1.65;
 }
 .promise__icon {
@@ -591,7 +592,7 @@ h3 {
 .audience-hero__sub {
   margin-top: 18px;
   color: var(--ink-500);
-  font-size: 17px;
+  font-size: clamp(17px, 1.5vw, 20px);
   line-height: 1.7;
 }
 
@@ -635,7 +636,7 @@ h3 {
 .brand-intro__body {
   margin-top: 18px;
   color: var(--ink-600);
-  font-size: 15px;
+  font-size: clamp(16px, 1.45vw, 19px);
   line-height: 1.8;
 }
 .brand-intro__body p + p {
@@ -753,7 +754,7 @@ h3 {
 .feature-block__desc {
   margin-top: 18px;
   color: var(--ink-600);
-  font-size: 16px;
+  font-size: clamp(16px, 1.45vw, 19px);
   line-height: 1.75;
 }
 .feature-block__desc strong {
@@ -1312,7 +1313,7 @@ h3 {
 .final-cta__desc {
   margin-top: 18px;
   color: var(--ink-600);
-  font-size: 17px;
+  font-size: clamp(17px, 1.5vw, 20px);
   line-height: 1.65;
 }
 .final-cta__store {

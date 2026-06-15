@@ -19,7 +19,9 @@ export function HeroRotatingTypeWord() {
   const showCursor = boxVisible && visibleLength < pair.word.length;
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (reduced) {
       setVisibleLength(pair.word.length);
       setBoxVisible(true);
@@ -51,7 +53,9 @@ export function HeroRotatingTypeWord() {
   }, [pairIndex]);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (reduced) return;
 
     const id = window.setInterval(() => {

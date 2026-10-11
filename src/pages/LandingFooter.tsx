@@ -52,9 +52,11 @@ export function LandingFooter() {
           <FooterLinkColumn title="고객지원" links={SUPPORT_LINKS} />
         </div>
         <div className="footer__compliance">
-          <strong>유료직업소개사업 신고 정보</strong>
+          <strong>유료직업소개사업 등록 정보</strong>
           <br />
-          직업안정법 제19조에 따라 유료직업소개사업 신고를 완료한 사업자입니다.
+          직업안정법 제19조에 따라 유료직업소개사업 등록을 완료한 사업자입니다.
+          <br />
+          등록번호 : 제2025-5610018-14-5-00010호 · 등록관청 : 수원시 영통구청
         </div>
         <div className="footer__legal">
           <div>

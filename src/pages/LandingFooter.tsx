@@ -52,26 +52,24 @@ export function LandingFooter() {
           <FooterLinkColumn title="고객지원" links={SUPPORT_LINKS} />
         </div>
         <div className="footer__compliance">
-          <strong>유료직업소개사업 신고 정보</strong>
+          <strong>유료직업소개사업 등록 정보</strong>
           <br />
-          직업안정법 제19조에 따라 유료직업소개사업 신고를 완료한 사업자입니다.
+          직업안정법 제19조에 따라 유료직업소개사업 등록을 완료한 사업자입니다.
           <br />
-          유료직업소개사업 신고번호 : [출시 시점 표기] · 관할 지자체 : [출시
-          시점 표기]
+          등록번호 : 제2025-5610018-14-5-00010호 · 등록관청 : 수원시 영통구청
         </div>
         <div className="footer__legal">
           <div>
-            (주)인력특공대 · 대표 [대표자명] · 사업자등록번호 [출시 시점 표기]
+            인력특공대 (Inteuk) · 대표 김정우 · 사업자등록번호 240-93-02404
           </div>
-          <div>
-            주소 : [출시 시점 표기] · 통신판매업 신고번호 : [출시 시점 표기]
-          </div>
-          <div>
-            고객센터 : 1234-5678 (평일 09:00 - 18:00) · 이메일 :
-            help@inryeok.kr
+          <div>주소 : 강원특별자치도 원주시 남산로 77, 3층 T7호(일산동)</div>
+          <div>이메일 : jeongwoo@inteuk.com</div>
+          <div style={{ marginTop: 8 }}>
+            Inteuk is a construction day-labor matching app based in Wonju,
+            South Korea.
           </div>
           <div style={{ marginTop: 8 }}>
-            © 2026 인력특공대. All rights reserved.
+            © 2026 인력특공대 (Inteuk). All rights reserved.
           </div>
         </div>
       </Container>
